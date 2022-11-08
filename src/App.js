@@ -1,9 +1,9 @@
-import React , {useState}from 'react';
+import React, { useState } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Detail } from './Detail';
+import { Detail } from "./Detail";
 
-const App=()=> {
+const App = () => {
   const [showDetails, setShowDetails] = useState(false);
   document.title = "GorillaCoffee";
 
@@ -13,21 +13,21 @@ const App=()=> {
       <header className="header p-3 position-absolute start-0 top-0 end-0 text-white bg-dark">
         <div className="d-flex justify-content-between align-items-center">
           <a href="/" className="text-decoration-none text-white fs-5 fw-bold">
-            GorillaCoffee
+            GorillaCoffeef
           </a>
 
-          <div  className='header-btn'>
-            <button   onClick={()=>setShowDetails(true)}>
-            <a href="#scroll-end"
-              className=" navbar-toggler text-white btn "
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbar"
-              aria-controls="navbar"
-              aria-expanded="true"
-              aria-label="Toggle navigation"
-              
-            />
+          <div className="header-btn">
+            <button onClick={() => setShowDetails(true)}>
+              <a
+                href="#scroll-end"
+                className=" navbar-toggler text-white btn "
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar"
+                aria-controls="navbar"
+                aria-expanded="true"
+                aria-label="Toggle navigation"
+              />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="36"
@@ -46,19 +46,16 @@ const App=()=> {
         </div>
       </header>
       {/* header end */}
-{/* flyout */}
-{showDetails && 
-<Detail/>
-}
-     
-    {/* flyout end */}
-{/* NAV */}
+      {/* flyout */}
+      {showDetails && <Detail />}
+
+      {/* flyout end */}
+      {/* NAV */}
       <nav
-      className="accordion-item navbar-collapse dropdown-nav collapse"
-      aria-labelledby="clickbutton"
-      data-bs-parent="#accordion"
+        className="accordion-item navbar-collapse dropdown-nav collapse"
+        aria-labelledby="clickbutton"
+        data-bs-parent="#accordion"
         id="navbar"
-        
       >
         <div className=" container-xxl d-flex align-items-start align-items-md-center">
           <div className="row align-items-start">
@@ -75,23 +72,24 @@ const App=()=> {
                   />
                 </div>
                 <div className="col-10 text-black ">
-                  <h3 >Amazing Flavour</h3>
+                  <h3>Amazing Flavour</h3>
                   <p>Find out more about our aAmazing Flavour</p>
                   <p>
-                    Learn More <i className="bi bi-arrow-right-short">
-                    <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-arrow-right-short"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                  />
-                </svg>
+                    Learn More{" "}
+                    <i className="bi bi-arrow-right-short">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        className="bi bi-arrow-right-short"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                        />
+                      </svg>
                     </i>
                   </p>
                 </div>
@@ -113,20 +111,21 @@ const App=()=> {
                   <h3>Surprising Benefits</h3>
                   <p>Find out more about our Surprising Benefits</p>
                   <p>
-                    Learn More <i className="bi bi-arrow-right-short">
-                    <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-arrow-right-short"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                  />
-                </svg>
+                    Learn More{" "}
+                    <i className="bi bi-arrow-right-short">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        className="bi bi-arrow-right-short"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                        />
+                      </svg>
                     </i>
                   </p>
                 </div>
@@ -148,27 +147,28 @@ const App=()=> {
                   <h3>Essential Nutrients</h3>
                   <p>Find out more about our Essential Nutrients</p>
                   <p>
-                    Learn More <i className="bi bi-arrow-right-short">
-                    <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-arrow-right-short"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                  />
-                </svg>
+                    Learn More{" "}
+                    <i className="bi bi-arrow-right-short">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        className="bi bi-arrow-right-short"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                        />
+                      </svg>
                     </i>
                   </p>
                 </div>
               </a>
             </div>
           </div>
-{/* CLOSE ICON */}
+          {/* CLOSE ICON */}
           <button
             className="navbar-toggler dropdown-nav"
             type="button"
@@ -203,24 +203,33 @@ const App=()=> {
         <source src="bg-video.mp4" type="video/mp4" />
       </video>
       <section>
-      <div
-      className=" container-custom ">
-        <div className="d-flex  align-items-center ">
-        <div className="text-white ml-auto info ">
-            <h1 className="d-flex mr-auto align-items-left fw-bold mb-4">
-              Discover The Taste Of Real<br/> Coffee.
-            </h1>
-            <p className="lead mb-4">
-              Lorem Ipsum is simply dummy text of the printing<br/> and typesetting
-              industry.
-            </p>
-            <a href="#" className="mt-2 btn btn-lg btn-outline-light" role="button">Buy Now</a>
+        <div className=" container-custom ">
+          <div className="d-flex  align-items-center ">
+            <div className="text-white ml-auto info ">
+              <h1 className="d-flex mr-auto align-items-left fw-bold mb-4">
+                Discover The Taste Of Real
+                <br /> Coffee.
+              </h1>
+              <p className="lead mb-4">
+                Lorem Ipsum is simply dummy text of the printing
+                <br /> and typesetting industry.
+              </p>
+              <a
+                href="#"
+                className="mt-2 btn btn-lg btn-outline-light"
+                role="button"
+              >
+                Buy Now
+              </a>
+            </div>
           </div>
-        </div>
         </div>
         <div className="container-custom2 row ">
           <div>
-            <a href="#scroll-down" className=" scroll-btn btn text-white fw-bold">
+            <a
+              href="#scroll-down"
+              className=" scroll-btn btn text-white fw-bold"
+            >
               Explore
             </a>
           </div>
@@ -241,13 +250,11 @@ const App=()=> {
             </svg>
           </div>
         </div>
-        </section>
-        <section className="mt-5 ">
-        <a id="scroll-down" ></a>
-
-        </section>
-             {/* section two paer 1 end */}
-
+      </section>
+      <section className="mt-5 ">
+        <a id="scroll-down"></a>
+      </section>
+      {/* section two paer 1 end */}
 
       {/* section 2 part1 */}
       <section className=" container-fluid custom-class ">
@@ -294,7 +301,7 @@ const App=()=> {
         </div>
       </section>
       {/* section twwo part 2 */}
-      
+
       <section className="mt-10  container-fluid ">
         <div className="container-fluid">
           <div className="row  ">
@@ -308,7 +315,7 @@ const App=()=> {
                 loading="lazy"
               />
             </div>
-            
+
             <div className="col-12 col-sm-6 align-self-center justify-content-md-center ">
               <div className="w-content-width">
                 <span className="h4">02</span>
@@ -388,12 +395,9 @@ const App=()=> {
       {/* section 3 start */}
 
       <section className="mt-5  ">
-        <a id="scroll-end" ></a>
-
-        </section>
-      <section
-        className="bg-dark text-white py-4 mt-40 collapse show"
-      >
+        <a id="scroll-end"></a>
+      </section>
+      <section className="bg-dark text-white py-4 mt-40 collapse show">
         <div className="container-fluid my-4 ">
           <div className="row">
             <div className="col-12 col-sm-4 mb-4">
@@ -527,10 +531,10 @@ const App=()=> {
           </ul>
         </div>
       </footer>
-      
+
       {/* footer end */}
     </div>
   );
-}
+};
 
 export default App;
