@@ -2,7 +2,8 @@ import "./App.css";
 import {
   increment,
   decrement,
-  incrementBy,reset,
+  incrementBy,
+  reset,
   decrementBy,
 } from "./features/counterSlice";
 import { useDispatch, useSelector } from "react-redux";
@@ -13,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <div>Hello</div>
-      <div>Counter Demo using Redux toolkit</div>
+      <div>Counter Demo using Redux toolkit!!!!!!!!!!!!!!!!!!!!!!!!!!!!</div>
       <div>
         <button onClick={() => dispatch(increment())}>+</button>
         <input type="text" value={count}></input>
@@ -27,8 +28,7 @@ function App() {
           </button>
         </div>
         <div>
-        <button onClick={() => dispatch(reset())}>RESET</button>
-
+          <button onClick={() => dispatch(reset())}>RESET</button>
         </div>
       </div>
     </div>
