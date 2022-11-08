@@ -13,7 +13,7 @@ const App = () => {
       <header className="header p-3 position-absolute start-0 top-0 end-0 text-white bg-dark">
         <div className="d-flex justify-content-between align-items-center">
           <a href="/" className="text-decoration-none text-white fs-5 fw-bold">
-            GorillaCoffeef
+            GorillaCoffee
           </a>
 
           <div className="header-btn">
