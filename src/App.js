@@ -7,7 +7,7 @@ const App = () => {
   const counter = useSelector((state) => state.Updown);
   return (
     <div className="App">
-      <p>counter demo using React-redux!!</p>
+      <p>****counter demo using React-redux!!</p>
 
       <div>
         <button onClick={() => dispatch(increment())}>+</button>
