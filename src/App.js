@@ -275,10 +275,9 @@ const App = () => {
               <span className="h4">01</span>
               <h1 className="h2 mb-4 fw-light">Amazing Coffee Flavour</h1>
               <p className="  mb-4 fw-ligher ">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Officia totam dolorem quasi! Quis fugiat totam id fuga non
-                distinctio incidunt amet nesciunt itaque, tempore repellat eos
-                natus quo mollitia laborum.
+                consectetur adipisicing elit. Officia totam dolorem quasi! Quis
+                fugiat totam id fuga non distinctio incidunt amet nesciunt
+                itaque, tempore repellat eos natus quo mollitia laborum.
               </p>
               <a href="#" className="text-secondary">
                 Read More <i className="bi bi-arrow-right-short"></i>
