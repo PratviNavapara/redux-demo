@@ -13,8 +13,7 @@ function App() {
   const count = useSelector((state) => state.counter.count);
   return (
     <div className="App">
-      <div>Hello</div>
-      <div>Counter Demo using Redux toolkit!!!!!!!!!!!!!!!!!!!!!!!!!!</div>
+      <div>*****Counter Demo using Redux toolkit!!!</div>
       <div>
         <button onClick={() => dispatch(increment())}>+</button>
         <input type="text" value={count}></input>
